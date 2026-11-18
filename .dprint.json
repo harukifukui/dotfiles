@@ -1,0 +1,16 @@
+{
+  "lineWidth": 120,
+  "indentWidth": 2,
+  "useTabs": false,
+  "excludes": [
+    ".config/nvim/lazy-lock.json",
+    ".config/nvim/lazyvim.json"
+  ],
+  "plugins": [
+    "npm:@dprint/json@0.26.0",
+    "npm:@dprint/markdown@0.29.0",
+    "npm:@dprint/shfmt@0.2.0",
+    "npm:@dprint/stylua@0.2.0",
+    "npm:@dprint/toml@0.10.0"
+  ]
+}

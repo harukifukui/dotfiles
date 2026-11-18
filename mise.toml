@@ -1,0 +1,152 @@
+min_version = "2026.11.10"
+
+[tools]
+dprint = "latest"
+
+[bootstrap.plugins]
+gh = "https://github.com/canoypa/mise-gh-extensions"
+skills = "https://github.com/mjyocca/mise-skills-plugin"
+
+[bootstrap.brew]
+homebrew_metadata = true
+
+[bootstrap.packages]
+# Homebrew formulae
+# https://mise.jdx.dev/bootstrap/packages/brew.html
+"brew:antidote" = "latest"
+"brew:ast-grep" = "latest"
+"brew:bat" = "latest"
+"brew:eza" = "latest"
+"brew:fd" = "latest"
+"brew:fzf" = "latest"
+"brew:gh" = "latest"
+"brew:gitleaks" = "latest"
+"brew:hyperfine" = "latest"
+"brew:lazygit" = "latest"
+"brew:lychee" = "latest"
+"brew:mas" = "latest"
+"brew:mise" = "latest"
+"brew:neovim" = "latest"
+"brew:openai/tools/tart" = "latest"
+"brew:poppler" = "latest"
+"brew:proton-pass-cli" = "latest"
+"brew:ripgrep" = "latest"
+"brew:scc" = "latest"
+"brew:xh" = "latest"
+"brew:yq" = "latest"
+"brew:zoxide" = "latest"
+"brew:zsh-patina" = "latest"
+
+# PHP build dependencies
+# https://github.com/jdx/vfox-php
+"brew:autoconf" = "latest"
+"brew:bison" = "latest"
+"brew:bzip2" = "latest"
+"brew:gd" = "latest"
+"brew:gmp" = "latest"
+"brew:icu4c@79" = "latest"
+"brew:libiconv" = "latest"
+"brew:libsodium" = "latest"
+"brew:libxml2" = "latest"
+"brew:libzip" = "latest"
+"brew:oniguruma" = "latest"
+"brew:openssl@3" = "latest"
+"brew:pkgconf" = "latest"
+"brew:re2c" = "latest"
+"brew:sqlite" = "latest"
+"brew:zlib" = "latest"
+
+# Homebrew casks
+# https://mise.jdx.dev/bootstrap/packages/brew-cask.html
+"brew-cask:betterdisplay" = "latest"
+"brew-cask:chatgpt" = "latest"
+"brew-cask:codex" = "latest"
+"brew-cask:dockdoor" = "latest"
+"brew-cask:fif7y/tap/dimble" = "latest"
+"brew-cask:font-jetbrains-mono-nerd-font" = "latest"
+"brew-cask:ghostty" = "latest"
+"brew-cask:google-chrome" = "latest"
+"brew-cask:karabiner-elements" = "latest"
+"brew-cask:macshot" = "latest"
+"brew-cask:naviapps/tap/kiseki" = "latest"
+"brew-cask:notunes" = "latest"
+"brew-cask:oomol-lab/tap/closeup" = "latest"
+"brew-cask:opencodex" = "latest"
+"brew-cask:orbstack" = "latest"
+"brew-cask:slack" = "latest"
+"brew-cask:tailscale-app" = "latest"
+"brew-cask:visual-studio-code" = "latest"
+
+# Paid apps
+"brew-cask:airbuddy" = "latest"
+"brew-cask:alfred" = "latest"
+"brew-cask:default-folder-x" = "latest"
+"brew-cask:launchos" = "latest"
+"brew-cask:mole-app" = "latest"
+"brew-cask:popclip" = "latest"
+"brew-cask:proton-pass" = "latest"
+"brew-cask:tablepro" = "latest"
+
+# Subscription apps
+"brew-cask:moom" = "latest"
+"brew-cask:parallels" = "latest"
+"brew-cask:vpn-tracker-365" = "latest"
+
+# Mac App Store apps
+# https://mise.jdx.dev/bootstrap/packages/mas.html
+"mas:937984704" = "latest" # Amphetamine
+"mas:640199958" = "latest" # Developer
+"mas:497799835" = "latest" # Xcode
+
+# Paid apps
+"mas:1470584107" = "latest" # Dato
+
+# Subscription apps
+"mas:1091189122" = "latest" # Bear
+
+# GitHub CLI extensions
+"gh:github/gh-stack" = "latest"
+"gh:seachicken/gh-poi" = "latest"
+
+# Agent skills
+"skills:ast-grep/agent-skill/ast-grep" = "latest"
+"skills:ast-grep/agent-skill/ast-grep-outline" = "latest"
+"skills:github/gh-stack/gh-stack" = "latest"
+"skills:vercel-labs/skills/find-skills" = "latest"
+
+[bootstrap.repos]
+"~/.local/share/xdg-ninja" = { url = "https://github.com/b3nj5m1n/xdg-ninja.git", ref = "main" }
+
+# https://mise.jdx.dev/dotfiles/managed.html
+[dotfiles]
+"~/.config/ghostty" = ".config/ghostty"
+"~/.config/git" = ".config/git"
+"~/.config/mise" = ".config/mise"
+"~/.config/nvim" = ".config/nvim"
+"~/.config/zsh/*" = ".config/zsh/*"
+"~/.ssh/*" = ".ssh/*"
+"~/.zshenv" = ".zshenv"
+
+# https://mise.jdx.dev/bootstrap/macos-defaults.html
+[bootstrap.settings.macos.dock]
+tilesize = 48
+show_recents = false
+mru_spaces = false
+
+[bootstrap.settings.macos.finder]
+show_pathbar = true
+show_status_bar = true
+sort_folders_first = true
+preferred_view_style = "list"
+
+[bootstrap.settings.macos.keyboard]
+press_and_hold = false
+automatic_capitalization = false
+automatic_spelling_correction = false
+
+[bootstrap.settings.macos.login_items]
+apps = ["/Applications/noTunes.app"]
+
+# https://mise.jdx.dev/bootstrap/shell.html
+[bootstrap.user]
+login_shell = "zsh"

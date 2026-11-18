@@ -1,0 +1,6 @@
+# https://ghostty.org/docs/config/reference
+
+font-size = 14
+macos-option-as-alt = left
+theme = Catppuccin Frappe
+window-save-state = always
