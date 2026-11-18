@@ -1,0 +1,60 @@
+[branch]
+	sort = "version:refname"
+
+[commit]
+	gpgSign = true
+	verbose = true
+
+[core]
+	quotePath = false
+
+[credential "https://gist.github.com"]
+	helper = ""
+	helper = "!gh auth git-credential"
+
+[credential "https://github.com"]
+	helper = ""
+	helper = "!gh auth git-credential"
+
+[diff]
+	algorithm = "histogram"
+
+[fetch]
+	prune = true
+
+[gpg]
+	format = "ssh"
+
+[gpg "ssh"]
+	allowedSignersFile = "~/.config/git/allowed_signers"
+
+[init]
+	defaultBranch = "main"
+
+[log]
+	date = "iso-local"
+
+[merge]
+	conflictStyle = "zdiff3"
+
+[pull]
+	ff = "only"
+
+[push]
+	autoSetupRemote = true
+
+[rebase]
+	autoSquash = true
+	missingCommitsCheck = "warn"
+
+[rerere]
+	enabled = true
+
+[tag]
+	gpgSign = true
+	sort = "version:refname"
+
+[user]
+	email = "3767369+harukifukui@users.noreply.github.com"
+	name = "Haruki Fukui"
+	signingKey = "key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIF9yBc84ZmskY2UHyKdMntk7MdHwkguoZ7CKrSikmj4u"
